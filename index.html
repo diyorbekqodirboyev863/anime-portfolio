@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Anime Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="logo">Anime.</h2>
+            <nav class="nav">
+                <a href="#" class="item">Home</a>
+                <a href="#" class="item">About</a>
+                <a href="#" class="item">Contact</a>
+                <a href="#" class="item">Service</a>
+                <a href="#" class="item">Blog</a>
+            </nav>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h1 class="hi">Hi! It's me!</h1>
+                <h1 class="name">I'm Akari<br />and I'am <span id="profession">Developer!</span></h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, debitis, doloribus velit eveniet maiores aspernatur ratione expedita error nemo adipisci ea, aliquid eligendi. Officia, qui.</p>
+                <div class="social-links">
+                    <a href="#" class="link"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" class="link"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" class="link"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" class="link"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+                <a href="#" class="btn"><ion-icon name="download"></ion-icon> Download CV</a>
+            </div>
+            <div class="img">
+                <div class="img-frame">
+                    <img src="anime-girl.jpg" alt="Anime character">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#profession', {
+            strings: ['YuoTuber!', 'Developer!', 'Blogger!'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+            showCursor: true,
+            cursorChar: '_',
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

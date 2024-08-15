@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    height: 100vh;
+    background: #353a46;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.header .logo {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav a::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    border-radius: 1.5px;
+    background: #fff;
+    transform: translateY(10px);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.nav a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section .content {
+    width: 50%;
+}
+
+.content .hi {
+    font-size: 2.1em;
+}
+
+.content .name {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.name span {
+    color: #0af;
+}
+
+.content .description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.content .social-links {
+    margin-bottom: 20px;
+}
+
+.social-links .link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5em;
+    background: #21242b;
+    border-radius: 50%;
+    color: #0af;
+    transition: 0.5s ease;
+}
+
+.social-links .link:hover {
+    background: #353a46;
+    color: #fff;
+}
+
+.content .btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #21242b;
+    color: #fff;
+}
+
+.content a.btn:hover {
+    background: #1a1b1e;
+}
+
+.section .img {
+    position: relative;
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.img .img-frame {
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top: 10px solid #0af;
+    border-bottom: 10px solid #0af;
+    overflow: hidden;
+}
+
+.img-frame img {
+    width: 100%;
+    height: 100%;
+}
